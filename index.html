@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omaima Hajjami — Leadership &amp; Human Resource Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FFFFFF;
+    --paper-raised:#EFEADD;
+    --ink:#1D2233;
+    --ink-soft:#4A5566;
+    --royal:#2C3B85;
+    --coral:#C97B5C;
+    --teal:#2E8B8C;
+    --hairline:#D7D2C8;
+    --max:920px;
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--royal); text-decoration-color:var(--coral); text-decoration-thickness:1px; text-underline-offset:3px;}
+  a:hover{color:var(--teal);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--royal); outline-offset:3px; border-radius:2px;}
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+
+  header.masthead{
+    padding:44px 0 28px;
+    border-bottom:1px solid var(--hairline);
+  }
+  .masthead .wrap{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:18px;
+  }
+  .name-block h1{
+    font-family:'Newsreader', serif;
+    font-weight:600;
+    font-size:clamp(28px, 4vw, 36px);
+    margin:0 0 4px;
+    letter-spacing:-0.01em;
+  }
+  .name-block p{
+    margin:0;
+    color:var(--ink-soft);
+    font-size:15px;
+  }
+  nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:22px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    font-size:15px;
+  }
+  nav a{color:var(--ink); text-decoration:none; border-bottom:1px solid transparent;}
+  nav a:hover{border-bottom-color:var(--teal); color:var(--ink);}
+
+  section{padding:52px 0;}
+  section:first-of-type{padding-top:56px;}
+  section + section{border-top:1px solid var(--hairline);}
+
+  .hero{
+    display:flex;
+    align-items:center;
+    gap:48px;
+    flex-wrap:wrap;
+  }
+  .hero-text{flex:1 1 380px;}
+  .hero-text p{
+    color:var(--ink-soft);
+    font-size:18px;
+    max-width:520px;
+    margin:0;
+  }
+  .hero-photo{
+    flex:0 0 auto;
+  }
+  .hero-photo img{
+    width:200px;
+    height:260px;
+    object-fit:cover;
+    border-radius:14px;
+    display:block;
+    box-shadow:0 1px 2px rgba(29,34,51,0.06), 0 8px 24px rgba(29,34,51,0.10);
+  }
+
+  .section-head{
+    font-family:'Newsreader', serif;
+    font-size:15px;
+    font-weight:600;
+    color:var(--ink-soft);
+    letter-spacing:0.02em;
+    margin:0 0 34px;
+  }
+
+  .eyebrow{
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:14px;
+    font-weight:500;
+    color:var(--ink-soft);
+    letter-spacing:0.03em;
+    margin:0 0 10px;
+  }
+  .stream-heading{
+    font-family:'Newsreader', serif;
+    font-weight:600;
+    font-size:clamp(24px, 3.2vw, 30px);
+    letter-spacing:-0.01em;
+    margin:0 0 16px;
+    color:var(--ink);
+  }
+  .stream-intro{
+    color:var(--ink-soft);
+    font-size:17px;
+    max-width:640px;
+    margin:0 0 36px;
+  }
+
+  .ribbon{
+    background-image:linear-gradient(120deg, rgba(201,123,92,0.35) 0%, rgba(201,123,92,0.35) 100%);
+    background-repeat:no-repeat;
+    background-size:100% 42%;
+    background-position:0 88%;
+    padding:0 2px;
+  }
+
+  .stream{
+    padding:28px 0 28px 20px;
+    border-top:1px solid var(--hairline);
+    border-left:3px solid var(--royal);
+  }
+  .stream:first-of-type{border-top:none; padding-top:0;}
+  .stream:nth-of-type(2){border-left-color:var(--teal);}
+  .stream h3{
+    font-family:'Newsreader', serif;
+    font-weight:600;
+    font-size:20px;
+    margin:0 0 12px;
+    color:var(--ink);
+  }
+  .stream p{margin:0; color:var(--ink-soft); font-size:16px;}
+
+  .pub-list{list-style:none; margin:0; padding:0;}
+  .pub-item{
+    display:grid;
+    grid-template-columns:64px 1fr;
+    gap:20px;
+    padding:18px 0;
+    border-top:1px solid var(--hairline);
+  }
+  .pub-item:first-child{border-top:none;}
+  .pub-year{
+    font-family:'Newsreader', serif;
+    font-weight:600;
+    color:var(--royal);
+    font-size:17px;
+  }
+  .pub-item p{margin:0 0 4px; font-size:16px;}
+  .pub-item .venue{color:var(--ink-soft); font-size:14px;}
+
+  .cv-link{
+    display:inline-block;
+    margin-top:30px;
+    font-size:15px;
+  }
+
+  .split{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:44px;
+  }
+  .split h3{
+    font-family:'Newsreader', serif;
+    font-weight:600;
+    font-size:19px;
+    margin:0 0 12px;
+  }
+  .split p{margin:0 0 10px; color:var(--ink-soft); font-size:16px;}
+  .split ul{margin:0; padding-left:20px; color:var(--ink-soft); font-size:15px;}
+  .split li{margin-bottom:6px;}
+
+  footer{
+    padding:48px 0 60px;
+    border-top:1px solid var(--hairline);
+  }
+  footer p{margin:0 0 8px; color:var(--ink-soft); font-size:15px;}
+  footer .languages{font-size:14px; color:var(--ink-soft);}
+
+  @media (max-width: 680px){
+    .pub-item{grid-template-columns:56px 1fr;}
+    .split{grid-template-columns:1fr; gap:30px;}
+    nav ul{gap:14px; font-size:14px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{scroll-behavior:auto !important;}
+  }
+
+  html{scroll-behavior:smooth;}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="name-block">
+      <h1>Omaima Hajjami</h1>
+      <p>Leadership &amp; Human Resource Development · Louisiana State University</p>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching &amp; Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap hero">
+    <div class="hero-text">
+      <p>I study how human resource development can support human-centered leadership, learning, and capacity development while responding to evolving organizational and technological contexts.</p>
+    </div>
+    <div class="hero-photo">
+      <img src="headshot.jpg" alt="Portrait of Omaima Hajjami" width="200" height="260">
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <h2 class="stream-heading">Research Interests</h2>
+
+    <div class="stream">
+      <h3>Leadership Development and Identity Negotiation in Complex Organizational Contexts</h3>
+      <p>This research stream examines how leaders develop and negotiate their identities through sensemaking of challenging experiences, competing expectations, and social interactions. It explores how institutional, cultural, and relational contexts shape leaders' understanding and enactment of who they are as leaders. The stream positions HRD as a key mechanism for supporting identity development, integration, and effective leadership enactment.</p>
+    </div>
+
+    <div class="stream">
+      <h3>Technology-Enabled Human Resource Development and Workplace Learning</h3>
+      <p>This research stream examines how emerging technologies, the metaverse, generative AI, digital microcredentials, and physical AI, are reshaping workplace and higher education learning, and what HRD's role is in that transformation. It studies institutional readiness for adopting these technologies and the ecosystem conditions that enable or constrain their value, extending to whether technology-mediated relationships can substitute for or support the human relational work, empathy, mentoring, leadership development, that HRD has traditionally depended on people to provide.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <h2 class="section-head">Selected Publications</h2>
+
+    <ul class="pub-list">
+      <li class="pub-item">
+        <span class="pub-year">2026</span>
+        <div>
+          <p>Hajjami, O., &amp; Robinson, P. A. Exploring the intersectionality of religion and gender: A multilevel intersectional analysis of Muslim women career development.</p>
+          <span class="venue">Human Resource Development International</span>
+        </div>
+      </li>
+      <li class="pub-item">
+        <span class="pub-year">2026</span>
+        <div>
+          <p>Hajjami, O., Eversole, B. A. W., Crowder, C. L., &amp; Crocco, O. S. Exploring factors of voluntary turnover among millennials: A qualitative study of Moroccan private sector organisations.</p>
+          <span class="venue">European Journal of Training and Development, 50(5–6), 698–719</span>
+        </div>
+      </li>
+      <li class="pub-item">
+        <span class="pub-year">2026</span>
+        <div>
+          <p>Shirazi, H. P., Al-Asfour, A., &amp; Hajjami, O. RISE after interruption: An intersectional framework for women's career interruption and reintegration.</p>
+          <span class="venue">Career Development International, 31(8), 123–141</span>
+        </div>
+      </li>
+      <li class="pub-item">
+        <span class="pub-year">2024</span>
+        <div>
+          <p>Hajjami, O., &amp; Park, S. Using the metaverse in training: Lessons from real cases.</p>
+          <span class="venue">European Journal of Training and Development, 48(5/6), 555–575</span>
+        </div>
+      </li>
+      <li class="pub-item">
+        <span class="pub-year">2024</span>
+        <div>
+          <p>Hajjami, O., &amp; Crocco, O. S. Evolving approaches to employee engagement: Comparing antecedents in remote work and traditional workplaces.</p>
+          <span class="venue">European Journal of Training and Development, 48(3/4), 375–392</span>
+        </div>
+      </li>
+    </ul>
+
+    <a class="cv-link" href="#contact">Full CV available on request</a>
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="wrap">
+    <h2 class="section-head">Teaching &amp; Service</h2>
+    <div class="split">
+      <div>
+        <h3>Teaching</h3>
+        <p>Instructor of record at Louisiana State University:</p>
+        <ul>
+          <li>LHRD 3571 — Needs Analysis in Human Resource Development</li>
+          <li>LHRD 4870 — Engagement in Global Learning Environments (student ratings 4.4–4.7 / 5.0)</li>
+        </ul>
+        <p>Teaching assistant, Louisiana State University:</p>
+        <ul>
+          <li>LHRD 4025 — Principles of Adult Education</li>
+          <li>LHRD 7025 — Advanced Adult Learning Theory &amp; Practice</li>
+        </ul>
+        <p>Teaching assistant, Indiana State University:</p>
+        <ul>
+          <li>HRD 473/573 — Evaluating Learner Performance</li>
+          <li>HRD 350 — Labor Relations</li>
+          <li>HRD 276 — Characteristics of Human Resource Development</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Service</h3>
+        <ul>
+          <li>Past Co-Chair, Leadership Special Interest Group, Academy of Human Resource Development</li>
+          <li>Writing Coordinator, Graduate Student SIG, Academy of Human Resource Development</li>
+          <li>Editorial Assistant, Industrial and Commercial Training Journal (Emerald)</li>
+          <li>Manuscript reviewer, Human Resource Development International and Human Resource Development Quarterly</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <p>Omaima Hajjami</p>
+    <p>School of Leadership and Human Resource Development, Louisiana State University</p>
+    <p><a href="mailto:ohajja1@lsu.edu">ohajja1@lsu.edu</a></p>
+    <p class="languages">Working languages: English, Arabic, French</p>
+  </div>
+</footer>
+
+</body>
+</html>
